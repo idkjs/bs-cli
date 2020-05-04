@@ -1,0 +1,26 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "BS\-CLI" "" "May 2020" "" ""
+.
+.SH "NAME"
+\fBbs\-cli\fR \- Add your dependencies to bsconfig\.json and package\.json at the same time
+.
+.SH "Synopsis"
+.
+.nf
+
+addbs bs\-decode
+addbsd @glennsl/bs\-jest
+addocaml compiler\-libs
+.
+.fi
+.
+.SH "Description"
+\fBaddbs\fR adds an npm package to \fBdependencies\fR in \fBpackage\.json\fR and \fBbs\-dependencies\fR in \fBbsconfig\.json\fR
+.
+.P
+\fBaddbsd\fR adds an npm package to \fBdevDependencies\fR in \fBpackage\.json\fR and \fBbs\-dev\-dependencies\fR in \fBbsconfig\.json\fR
+.
+.P
+\fBaddocaml\fR adds a ocaml package ocaml\-dependencies in \fBbsconfig\.json\fR

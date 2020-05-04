@@ -1,0 +1,25 @@
+{
+  "name": "bs-cli",
+  "version": "0.1.0",
+  "description": "Add your dependencies to bsconfig.json and package.json at the same time",
+  "bin": {
+    "addbs": "./src/addbs.sh",
+    "addbsd": "./src/addbsd.sh",
+    "addocaml": "./src/addbsd.sh"
+  },
+  "keywords": [
+    "BuckleScript",
+    "bash",
+    "zsh",
+    "bsconfig",
+    "npm",
+    "pnpm",
+    "yarn",
+    "yarn2",
+    "reasonml",
+    "ocaml",
+    "interop"
+  ],
+  "author": "Alain Armand <aarmand.inbox@gmail.com> <aarmand.inbox@gmail.com>",
+  "license": "MIT"
+}
