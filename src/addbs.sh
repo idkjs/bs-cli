@@ -41,13 +41,13 @@ post() {
     RED='\033[0;31m'
 
     echo ✨"${DEPS[@]} installed!✨\n"
-    echo ✨"${RED}package.json ✨\n"
+    echo ✨"${RED}package.json dependencies ✨\n"
          
     echo $(cat package.json | jq '.dependencies')
 
     echo "\n"
 
-    echo ✨"bsconfig.json ✨\n"
+    echo ✨"bsconfig.json bs-dependencies✨\n"
     catbs=$(cat bsconfig.json | jq '.["bs-dependencies"]')
     echo $catbs
 }
@@ -121,10 +121,3 @@ if [ ! -f package.json ]; then
     fail_no_package_json
 fi
 
-# run program, fail if none of the above are matched
-
-# if main; then
-#     post
-# else
-#     post_fail
-# fi

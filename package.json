@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Add your dependencies to bsconfig.json and package.json at the same time",
   "bin": {
+    "bscli": "./src/bscli.sh",
     "addbs": "./src/addbs.sh",
     "addbsd": "./src/addbsd.sh",
     "addocaml": "./src/addbsd.sh"
@@ -21,5 +22,6 @@
     "interop"
   ],
   "author": "Alain Armand <aarmand.inbox@gmail.com> <aarmand.inbox@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "install": "make install"
 }
