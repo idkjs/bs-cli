@@ -21,3 +21,9 @@ fi
 DEPS=($@)
 
 echo ✨"Running $1 ${DEPS[@]}  ✨\n"
+
+if [[ ${BASH_SOURCE[0]} != $0 ]]; then
+  export -f bscli "${@}"
+else
+  bscli "${@}"
+fi

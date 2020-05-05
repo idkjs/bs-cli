@@ -23,5 +23,7 @@
   ],
   "author": "Alain Armand <aarmand.inbox@gmail.com> <aarmand.inbox@gmail.com>",
   "license": "MIT",
+  "scripts": [ "bscli.sh" ],
+  "global": "true",
   "install": "make install"
 }
